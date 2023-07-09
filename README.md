@@ -18,4 +18,3 @@ That's it! You should now be able to view the Mustang Landing Page on your local
 
 ## Demo Video
 ![Demo in Src](https://github.com/Rahul-Budhan/Mustang-Website/blob/main/src/demo.mp4)
-https://github.com/Rahul-Budhan/Mustang-Website/raw/main/src/demo.mp4
