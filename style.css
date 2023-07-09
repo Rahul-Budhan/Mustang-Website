@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+:root {
+    --element-colors: black;
+    --body-color: gray;
+}
+
+body {
+    background-color:  var(--body-color);
+    font-family: 'Agdasima', sans-serif;
+}
+
+.loading {
+    display: none;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+#rotate {
+    height: 50vh;
+    margin: 10% 35%;
+    animation: rotation 5s infinite linear;
+}
+
+#container {
+    margin: 2%;
+    padding: 2%;
+    border-radius: 25px;
+    background-image: url(src/bg.png);
+    color: var(--element-colors);
+}
+
+header {
+    display: flex;
+    text-align: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header h3 {
+    margin-right: 0%;
+}
+
+.nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+header .nav a {
+    text-decoration: none;
+    color: var(--element-colors);
+    cursor: pointer;
+    margin-left: 15%;
+}
+
+header .nav:hover {
+    background-image: url(src/logo.png);
+}
+
+header .btn {
+    margin-left: 13%;
+}
+
+.btn {
+    padding: 10px;
+    text-align: center;
+    border: 2px var(--element-colors) solid;
+}
+
+.btn a {
+    text-decoration: none;
+    color: var(--element-colors);
+    cursor: pointer;
+}
+
+.mode-switch {
+    margin-left: 10%;
+    background-color: rgba(214, 214, 214, 0.836);
+    width: 8%;
+    border-radius: 25px;
+    padding: .5%;
+    border: solid 2px var(--element-colors);
+}
+
+.fa-moon {
+    /* display: none; */
+    margin-left: 50%;
+    margin-right: -5%;
+    background-color: black;
+    color: white;
+}
+
+.mode-switch .fa-regular {
+    padding: 13%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid 2px var(--element-colors);
+
+}
+
+.fa-sun {
+    margin-left: -50%;
+    margin-right: 5%;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    display: flex;
+}
+
+.landing-left {
+    width: 61.5%;
+    display: block;
+}
+
+.landing-left h1 {
+    font-weight: 900;
+    font-size: 500%;
+}
+
+#heading-img {
+    width: 30%;
+    opacity: 0.7;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 10%;
+}
+
+.landing-right {
+    margin-top: 10%;
+    margin-left: 35%;
+    background-image: linear-gradient(red, orange);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 89% 85%;
+}
+
+.landing-right img {
+    margin-left: 2.5%;
+    width: 84%;
+    margin-top: -3%;
+}
+
+#container1 {
+    position: relative;
+    margin-top: 10%;
+    /* height: 50vh; */
+}
+
+#crousel-img {
+    width: 75vh;
+    height: 300px;
+    margin-top: -10%;
+    margin-bottom: -40%;
+}
+
+#background {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    font-size: 48vh;
+    z-index: 1;
+    opacity: 0.2;
+    font-weight: bolder;
+}
+
+.lowerlanding {
+    display: flex;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    cursor: pointer;
+    padding: 3%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    border: solid var(--element-colors) 2px;
+}
+
+#tyre-icon {
+    margin-top: 25%;
+    text-align: center;
+    align-items: center;
+}
+
+#tyre-icon .det {
+    margin-left: 10%;
+    display: flex;
+}
+
+.info-head {
+    margin-left: 10%;
+    opacity: 0.7;
+}
+
+.info {
+    font-weight: 700;
+    margin-left: 18%;
+}
+
+.right-lower {
+    margin-top: 10%;
+}
+
+.hex-container {
+    width: 10%;
+    height: 10%;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+
+.hex-container:after {
+    transform: rotate(90deg);
+}
+
+.hexagon {
+    width: 70%;
+    height: 60%;
+    margin-left: 130%;
+    margin-top: 5%;
+    background-image: url(src/frame.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+
+
+.hex-row-wrapper {
+    position: absolute;
+    width: 19%;
+    height: 30%;
+    padding: 0px 0px 0px;
+    transition: .3s;
+    border-radius: 50%;
+}
+
+.hex-row {
+    width: 265px;
+    display: block;
+    position: absolute;
+    height: 94px;
+    width: 100%;
+    top: 0px;
+}
+
+.hex-container img {
+    position: absolute;
+    transition: .3s;
+    transform-origin: center;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}

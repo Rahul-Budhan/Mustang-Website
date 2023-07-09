@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e77466b2d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="loading" >
+        <img src="src/logo.png" alt="" id="rotate">
+    </div>
+    <div id="container">
+        <header>
+            <h3>
+                <img id="heading-img" src="src/crousel/1.png" alt="">
+                Mustang Garage
+            </h3>
+            <div class="nav">
+                <a href="">Cars</a>
+                <a href="">History</a>
+                <a href="">Technology</a>
+                <a href="">Production</a>
+            </div>
+            <div class="mode-switch">
+                <i class="fa-regular fa-sun" onclick="switchMode('light')"></i>
+                <i class="fa-regular fa-moon" onclick="switchMode('dark')"></i>
+            </div>
+            <div class="btn"><a href="">CONTACT US <br><i class="fa-solid fa-address-card"></i></a></div>
+        </header>
+        
+        <div class="container">
+            <div class="landing-left">
+                <h1>
+                    Muscle Mustang
+                </h1>
+                <p>Since 1903, Ford Motor Company has put the world on wheels.</p>
+                <div class="btn"><a href="">DISCOVER
+                        <br><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="landing-right"><img src="src/0.png" alt="Mustang"></div>
+        </div>
+        <div class="lowerlanding">
+            <div class="left-lower">
+                <div class="crousel-btns">
+                    <i class="fa-solid fa-chevron-left" onclick="changeImgesForAll(-1)"></i>
+                    <i class="fa-solid fa-chevron-right" onclick="changeImgesForAll(1)"></i>
+                </div>
+                <div id="container1">
+                    <div id="background">
+                        1964
+                    </div>
+                    <img id="crousel-img" src="src/crousel/1.png" alt="">
+                    <div id="tyre-icon">
+
+                        <div class="det">
+                            <h1 class="info-head">Base Price</h1>
+                            <h1 class="info-head">Power</h1>
+                            <h1 class="info-head">Engine</h1>
+                        </div>
+                        <div class="det">
+                            <p class="info">$4,195</p>
+                            <p class="info">355 HP</p>
+                            <p class="info">129 V8</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-lower">
+                <div class="hex-container">
+                    <div class="hex-row-wrapper">
+                        <div class="hexagon">
+                            <img class="hexagonImg" src="src/hex/hex-2.png" onclick="changeUsingHex(0)" alt="">
+                        </div>
+                        <div class="hexagon">
+                            <img class="hexagonImg" src="src/hex/hex-3.png" onclick="changeUsingHex(1)"  alt="">
+                        </div>
+                        <div class="hexagon">
+                            <img class="hexagonImg" src="src/hex/hex-4.png"  onclick="changeUsingHex(2)"  alt=""></i>
+                        </div>
+                        
+                    </div>
+                    <div class="active">
+                        <div class="arrow-left"></div>
+                        <div class="arrow-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
