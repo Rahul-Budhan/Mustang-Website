@@ -17,4 +17,7 @@ Clone the repository to your local machine and open/run index.html
 That's it! You should now be able to view the Mustang Landing Page on your local machine.
 
 ## Demo Video
-![Demo in Src](https://github.com/Rahul-Budhan/Mustang-Website/blob/main/src/demo.mp4)
+
+
+https://github.com/Rahul-Budhan/Mustang-Website/assets/92685650/835dad8d-54dc-4735-8422-69c5055c367c
+
